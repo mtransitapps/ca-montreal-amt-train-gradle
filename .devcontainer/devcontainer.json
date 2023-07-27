@@ -1,0 +1,34 @@
+{
+	"image": "mcr.microsoft.com/devcontainers/java:17",
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "none",
+			"installGradle": "true",
+			"installMaven": "true"
+		}
+	},
+	"customizations": {
+		"codespaces": {
+			"repositories": {
+				"mtransitapps/ca-montreal-amt-train-android": {
+					"permissions": "write-all"
+				},
+				"mtransitapps/ca-montreal-amt-train-parser": {
+					"permissions": "write-all"
+				},
+				"mtransitapps/commons-android": {
+					"permissions": "write-all"
+				},
+				"mtransitapps/parser": {
+					"permissions": "write-all"
+				},
+				"mtransitapps/commons-java": {
+					"permissions": "write-all"
+				},
+				"mtransitapps/commons": {
+					"permissions": "write-all"
+				}
+			}
+		}
+	}
+}
